@@ -1,0 +1,23 @@
+###read all user
+GET http://localhost:3000/user-api/users
+###create user
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"manoghna",
+    "email":"manu@gmail.com",
+    "dateOfBirth":"2000-09-12",
+    "mobileNumber":9030771892
+}
+
+###read user by id
+GET http://localhost:3000/user-api/users/69a691015639123b96d03e6d
+
+###modify the user
+DELETE http://localhost:3000/user-api/users/69a691015639123b96d03e6d
+
+###patch
+PATCH http://localhost:3000/user-api/users/69a691015639123b96d03e6d
+
+
